@@ -10,7 +10,7 @@ public class HelloController {
 	@RequestMapping("hello")
 	public String hello() {
 		
-		return "aaaaaaaaa";
+		return "bbbbb";
 	}
 
 }
