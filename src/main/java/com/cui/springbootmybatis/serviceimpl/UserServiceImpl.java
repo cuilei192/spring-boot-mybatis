@@ -13,13 +13,13 @@ import com.cui.springbootmybatis.service.UserService;
 @Service
 public class UserServiceImpl implements UserService{
 
-	@Autowired
-	UserDao userDao;
-	
+//	@Autowired
+//	UserDao userDao;
+//	
 	@Override
 	public List<User> getUser() {
 		// TODO Auto-generated method stub
-		return userDao.getUser(); 
+		return null; 
 	}
 
 }

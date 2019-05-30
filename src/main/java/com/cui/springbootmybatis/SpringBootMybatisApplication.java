@@ -1,11 +1,13 @@
 package com.cui.springbootmybatis;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-@SpringBootApplication
-@MapperScan("com.cui.springbootmybatis.dao")
+import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure;
+
+@SpringBootApplication(exclude={DataSourceAutoConfiguration.class,DruidDataSourceAutoConfigure.class})
+//@MapperScan("com.cui.springbootmybatis.dao")
 public class SpringBootMybatisApplication {
 
 	public static void main(String[] args) {
